@@ -19,11 +19,13 @@ int constrainer::constrain(token t) {
 		// TO DO: Get the last symbol accessed from the symbol table:
 		//    this will be the variable on the LHS.
 		// "Remember" the data type in constType: constType = ...
+		constType = symTbl.getSym(symTbl.getLastAccessed()).datatype;
 
 		break;
 	case NTC_RHS_END:
 		// finished assignment statement
 		// TO DO: stop constraining the assignment statement
+		insertIdents = false;
 		
 		break;
 	case TOK_IDENT:
@@ -31,14 +33,21 @@ int constrainer::constrain(token t) {
 		// If we are inserting identifiers (parsing declarations)
 		// - (try to) insert the token into the symbol table with
 		//   the current scope. 
+		
+
 		// - If the insert fails because the ident is already in
 		//   the table, print the following error message:
 		//   "Constrainer: symbol re-declared " << NAME_OF_IDENT << endl;
+		
 		// - If the insert fails for any reason, return -1 (error)
 		// If we are not inserting idents (parsing executable code)
 		// - make sure the ident is already declared in this scope.
+		
+		
 		//   If it is not, print the following error and return -1
 		// "constrain: identifier undefined: " << NAME_OF_IDENT << endl;
+		
+		
 		// - If we are doing type checking on an assignment statement
 		//   and the type of this ident is not the same as the 
 		//   constraining type print the following error message:
@@ -66,6 +75,7 @@ int constrainer::constrain(token t) {
 	case TOK_VAR: 
 		// we are at beginning a variable declaration
 		// TO DO: turn ON "we are inserting identifiers"
+		insertIdents = true;
 	
 		break;
 	} // end switch()
