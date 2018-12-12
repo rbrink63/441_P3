@@ -70,13 +70,42 @@ int constrainer::constrain(token t) {
 		 }
 
 		break;
-	case TOK_INT_LIT: case TOK_CHAR_LIT: case TOK_REAL_LIT:
+	case TOK_INT_LIT:
 	//Joiner said we may want to break up this one
 		// TO DO: 
 		// if we are constraining type for an assignment
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
+		    if (constType > 0 && constType != t.tokId){
+			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
+		    }
+
+
+		break;
+	case TOK_CHAR_LIT:
+	//Joiner said we may want to break up this one
+		// TO DO: 
+		// if we are constraining type for an assignment
+		// and the token t isn't the same type as the
+		// constraint type, print this error message
+		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
+		    if (constType > 0 && constType != t.tokId){
+			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
+		    }
+
+
+		break;
+	case TOK_REAL_LIT:
+	//Joiner said we may want to break up this one
+		// TO DO: 
+		// if we are constraining type for an assignment
+		// and the token t isn't the same type as the
+		// constraint type, print this error message
+		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
+		    if (constType > 0 && constType != t.tokId){
+			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
+		    }
 
 
 		break;
@@ -84,8 +113,11 @@ int constrainer::constrain(token t) {
 		// we've received the TYPE of a Declaration Statement
 		// TO DO:
 		// - set all unknown categories to "simple var" (see constants)
+		symTbl.setUnknownCats(SYMT_CAT_SIMPLE_VAR);
 		// - set all unknown types to the token's ID
+		symTbl.setUnknownTypes(t.tokId);
 		// - turn OFF "we are inserting identifiers"
+		insertIdents = false;
 
 		break;
 	case TOK_VAR: 
