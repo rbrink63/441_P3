@@ -1,0 +1,1953 @@
+
+PARSE: inTok=32 PROGRAM
+Stack print: n=1
+200 <NT_PROGRAM>
+
+PARSE: inTok=32 PROGRAM
+Stack print: n=8
+ 32 PROGRAM
+ -3 _IDENT=[]
+238 <NTC_PGM_HEADER>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P1]
+Stack print: n=7
+ -3 _IDENT=[]
+238 <NTC_PGM_HEADER>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::insert()
+========== SYMBOL TABLE (num=1) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                                  -999       1
+
+
+PARSE: inTok=64 ;
+Stack print: n=6
+238 <NTC_PGM_HEADER>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::setUnknownCats()
+========== SYMBOL TABLE (num=1) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                                   200       1
+
+symbolTbl::setUnknownTypes()
+========== SYMBOL TABLE (num=1) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+
+
+PARSE: inTok=64 ;
+Stack print: n=5
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=45 VAR
+Stack print: n=4
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=45 VAR
+Stack print: n=9
+ 45 VAR
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=8
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=9
+ -3 _IDENT=[]
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::insert()
+========== SYMBOL TABLE (num=2) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                                   -999       1
+
+
+PARSE: inTok=63 ,
+Stack print: n=8
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=63 ,
+Stack print: n=9
+ 63 ,
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[J]
+Stack print: n=8
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[J]
+Stack print: n=9
+ -3 _IDENT=[]
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::insert()
+========== SYMBOL TABLE (num=3) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                                   -999       1
+_IDENT=[J]                                   -999       1
+
+
+PARSE: inTok=54 :
+Stack print: n=8
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=54 :
+Stack print: n=7
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=20 INTEGER
+Stack print: n=6
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=20 INTEGER
+Stack print: n=6
+207 <STD_TYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=20 INTEGER
+Stack print: n=6
+ 20 INTEGER
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::setUnknownCats()
+========== SYMBOL TABLE (num=3) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                                      3       1
+_IDENT=[J]                                      3       1
+
+symbolTbl::setUnknownTypes()
+========== SYMBOL TABLE (num=3) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+
+
+PARSE: inTok=64 ;
+Stack print: n=5
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=45 VAR
+Stack print: n=4
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=45 VAR
+Stack print: n=9
+ 45 VAR
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=8
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=9
+ -3 _IDENT=[]
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::insert()
+========== SYMBOL TABLE (num=4) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                                   -999       1
+
+
+PARSE: inTok=63 ,
+Stack print: n=8
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=63 ,
+Stack print: n=9
+ 63 ,
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[Q]
+Stack print: n=8
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[Q]
+Stack print: n=9
+ -3 _IDENT=[]
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::insert()
+========== SYMBOL TABLE (num=5) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                                   -999       1
+_IDENT=[Q]                                   -999       1
+
+
+PARSE: inTok=54 :
+Stack print: n=8
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=54 :
+Stack print: n=7
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=35 REAL
+Stack print: n=6
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=35 REAL
+Stack print: n=6
+207 <STD_TYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=35 REAL
+Stack print: n=6
+ 35 REAL
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::setUnknownCats()
+========== SYMBOL TABLE (num=5) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                                      3       1
+_IDENT=[Q]                                      3       1
+
+symbolTbl::setUnknownTypes()
+========== SYMBOL TABLE (num=5) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                   REAL               3       1
+_IDENT=[Q]                   REAL               3       1
+
+
+PARSE: inTok=64 ;
+Stack print: n=5
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=45 VAR
+Stack print: n=4
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=45 VAR
+Stack print: n=9
+ 45 VAR
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[S]
+Stack print: n=8
+204 <ID_LIST>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[S]
+Stack print: n=9
+ -3 _IDENT=[]
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::insert()
+========== SYMBOL TABLE (num=6) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                   REAL               3       1
+_IDENT=[Q]                   REAL               3       1
+_IDENT=[S]                                   -999       1
+
+
+PARSE: inTok=54 :
+Stack print: n=8
+205 <ID_LIST_END>
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=54 :
+Stack print: n=7
+ 54 :
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=39 STRING
+Stack print: n=6
+206 <DTYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=39 STRING
+Stack print: n=6
+207 <STD_TYPE>
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=39 STRING
+Stack print: n=6
+ 39 STRING
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+symbolTbl::setUnknownCats()
+========== SYMBOL TABLE (num=6) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                   REAL               3       1
+_IDENT=[Q]                   REAL               3       1
+_IDENT=[S]                                      3       1
+
+symbolTbl::setUnknownTypes()
+========== SYMBOL TABLE (num=6) ==================
+Token ID and name            type           categ   scope
+--------------------------   ------------   -----   -----
+_IDENT=[P1]                  -                200       1
+_IDENT=[I]                   INTEGER            3       1
+_IDENT=[J]                   INTEGER            3       1
+_IDENT=[P]                   REAL               3       1
+_IDENT=[Q]                   REAL               3       1
+_IDENT=[S]                   STRING             3       1
+
+
+PARSE: inTok=64 ;
+Stack print: n=5
+ 64 ;
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=2 BEGIN
+Stack print: n=4
+201 <DECLARATIONS>
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=2 BEGIN
+Stack print: n=3
+202 <SUBPGM_DCLS>
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=2 BEGIN
+Stack print: n=2
+203 <CMPD_STMT>
+ 50 .
+
+PARSE: inTok=2 BEGIN
+Stack print: n=4
+  2 BEGIN
+213 <OPT_STMTS>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=3
+213 <OPT_STMTS>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=3
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=4
+216 <STMT>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=5
+ -3 _IDENT=[]
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=4
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=8
+220 <VAR_END>
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=7
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=6
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[6]
+Stack print: n=5
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[6]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[6]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[6]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[6]
+Stack print: n=8
+ -4 _INT_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=53 *
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=53 *
+Stack print: n=8
+233 <MUL_OP>
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=53 *
+Stack print: n=8
+ 53 *
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[2]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[2]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[2]
+Stack print: n=8
+ -4 _INT_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=7
+230 <ADD_OP>
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=7
+ 58 +
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[4]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[4]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[4]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[4]
+Stack print: n=8
+ -4 _INT_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=5
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=3
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+ 64 ;
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[J]
+Stack print: n=3
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[J]
+Stack print: n=4
+216 <STMT>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[J]
+Stack print: n=5
+ -3 _IDENT=[]
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=4
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=8
+220 <VAR_END>
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=7
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=6
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=5
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[I]
+Stack print: n=9
+ -3 _IDENT=[]
+235 <FACTOR_END>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=8
+235 <FACTOR_END>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=8
+233 <MUL_OP>
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=8
+ 60 /
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[3]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[3]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[3]
+Stack print: n=8
+ -4 _INT_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=7
+230 <ADD_OP>
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=7
+ 59 -
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[1]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[1]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[1]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-4 _INT_LIT=[1]
+Stack print: n=8
+ -4 _INT_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=5
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=3
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+ 64 ;
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=3
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=4
+216 <STMT>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=5
+ -3 _IDENT=[]
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=4
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=8
+220 <VAR_END>
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=7
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=6
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.5]
+Stack print: n=5
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.5]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.5]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.5]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.5]
+Stack print: n=8
+ -5 _REAL_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=53 *
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=53 *
+Stack print: n=8
+233 <MUL_OP>
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=53 *
+Stack print: n=8
+ 53 *
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[2.0]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[2.0]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[2.0]
+Stack print: n=8
+ -5 _REAL_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=7
+230 <ADD_OP>
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=58 +
+Stack print: n=7
+ 58 +
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[4.0]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[4.0]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[4.0]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[4.0]
+Stack print: n=8
+ -5 _REAL_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=5
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=3
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+ 64 ;
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[Q]
+Stack print: n=3
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[Q]
+Stack print: n=4
+216 <STMT>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[Q]
+Stack print: n=5
+ -3 _IDENT=[]
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=4
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=8
+220 <VAR_END>
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=7
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=6
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=5
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[P]
+Stack print: n=9
+ -3 _IDENT=[]
+235 <FACTOR_END>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=8
+235 <FACTOR_END>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=8
+233 <MUL_OP>
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=60 /
+Stack print: n=8
+ 60 /
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.0]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.0]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[3.0]
+Stack print: n=8
+ -5 _REAL_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=7
+230 <ADD_OP>
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=59 -
+Stack print: n=7
+ 59 -
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[1.0]
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[1.0]
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[1.0]
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-5 _REAL_LIT=[1.0]
+Stack print: n=8
+ -5 _REAL_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=5
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=3
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=64 ;
+Stack print: n=4
+ 64 ;
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[S]
+Stack print: n=3
+214 <STMT_LIST>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[S]
+Stack print: n=4
+216 <STMT>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-3 _IDENT=[S]
+Stack print: n=5
+ -3 _IDENT=[]
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=4
+218 <PROC_OR_ASSIGN>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=8
+220 <VAR_END>
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=7
+239 <NTC_SET_LHS>
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=69 :=
+Stack print: n=6
+ 69 :=
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-6 _CHAR_LIT=['Hello world']
+Stack print: n=5
+225 <EXPR>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-6 _CHAR_LIT=['Hello world']
+Stack print: n=6
+228 <SIMPLE_EXPR>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-6 _CHAR_LIT=['Hello world']
+Stack print: n=7
+231 <TERM>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-6 _CHAR_LIT=['Hello world']
+Stack print: n=8
+234 <FACTOR>
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=-6 _CHAR_LIT=['Hello world']
+Stack print: n=8
+ -6 _CHAR_LIT=[]
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=11 END
+Stack print: n=7
+232 <TERM_END>
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=11 END
+Stack print: n=6
+229 <SIMPLE_EXPR_END>
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=11 END
+Stack print: n=5
+226 <EXPR_END>
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=11 END
+Stack print: n=4
+240 <NTC_RHS_END>
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=11 END
+Stack print: n=3
+215 <STMT_LIST_END>
+ 11 END
+ 50 .
+
+PARSE: inTok=11 END
+Stack print: n=2
+ 11 END
+ 50 .
+
+PARSE: inTok=50 .
+Stack print: n=1
+ 50 .
+Parser: success!

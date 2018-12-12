@@ -63,7 +63,7 @@ int constrainer::constrain(token t) {
 		//   and the type of this ident is not the same as the 
 		//   constraining type print the following error message:
 		//   "constrain: data type does not match LHS of assignment: " << NAME_OF_IDENT << endl;
-		    if (constType > 0 && constType != t.tokId){
+		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
 			 cout << "constrain: data type does not match LHS of assignment: " << getTokenString(t) << endl;		       	
 		    }
 		    
@@ -77,7 +77,7 @@ int constrainer::constrain(token t) {
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
-		    if (constType > 0 && constType != t.tokId){
+		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
 			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
 		    }
 
@@ -90,7 +90,7 @@ int constrainer::constrain(token t) {
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
-		    if (constType > 0 && constType != t.tokId){
+		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
 			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
 		    }
 
@@ -103,7 +103,7 @@ int constrainer::constrain(token t) {
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
-		    if (constType > 0 && constType != t.tokId){
+		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
 			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
 		    }
 
