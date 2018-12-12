@@ -29,29 +29,45 @@ int constrainer::constrain(token t) {
 		
 		break;
 	case TOK_IDENT:
+		
+		int already_in_table;
 		// TO DO: 
 		// If we are inserting identifiers (parsing declarations)
 		// - (try to) insert the token into the symbol table with
 		//   the current scope. 
+		if (insertIdents){
+		    already_in_table = symTbl.insert(t, currScope);
+		
+		    // - If the insert fails because the ident is already in
+		    //   the table, print the following error message:
+		    //   "Constrainer: symbol re-declared " << NAME_OF_IDENT << endl;
+		    if (already_in_table == SYMT_ALREADY_EXISTS){
+		        cout << "Constrainer: symbol re-declared " << getTokenString(t) << endl;
+		        //should this be a part of this if?
+		        // - If the insert fails for any reason, return -1 (error)
+		        return -1;
+		    }
+		}
 		
 
-		// - If the insert fails because the ident is already in
-		//   the table, print the following error message:
-		//   "Constrainer: symbol re-declared " << NAME_OF_IDENT << endl;
-		
-		// - If the insert fails for any reason, return -1 (error)
 		// If we are not inserting idents (parsing executable code)
 		// - make sure the ident is already declared in this scope.
-		
-		
-		//   If it is not, print the following error and return -1
-		// "constrain: identifier undefined: " << NAME_OF_IDENT << endl;
-		
+		else{
+		     if (symTbl.search(t.sref->data, currScope) < 0){
+			//   If it is not, print the following error and return -1
+			// "constrain: identifier undefined: " << NAME_OF_IDENT << endl;
+			cout << "constrain: identifier undefined: " << getTokenString(t) << endl; 
+		     }
 		
 		// - If we are doing type checking on an assignment statement
 		//   and the type of this ident is not the same as the 
 		//   constraining type print the following error message:
 		//   "constrain: data type does not match LHS of assignment: " << NAME_OF_IDENT << endl;
+		    if (constType > 0 && constType != t.tokId){
+			 cout << "constrain: data type does not match LHS of assignment: " << getTokenString(t) << endl;		       	
+		    }
+		    
+		 }
 
 		break;
 	case TOK_INT_LIT: case TOK_CHAR_LIT: case TOK_REAL_LIT:
