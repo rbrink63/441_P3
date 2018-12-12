@@ -128,6 +128,6 @@ void symbolTbl::print() {
 			 << setw(5) << tbl[i].category << "   "
 			 << setw(5) << tbl[i].scope << endl;
 	}
-	getchar();
+	//getchar();
 	cout << endl;
 } // print()

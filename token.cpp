@@ -32,6 +32,6 @@ std::string getTokenString(token tok) {
 	else if (id >= FIRST_NT && id <= LAST_NT)
 		s = NON_TERMINAL[id - FIRST_NT];
 	else
-		s =  "INVALID_TOK_ID=" + id;
+		s =  "INVALID_TOK_ID=" + std::to_string(id);
 	return s;
 } // getTokenString()

@@ -107,7 +107,7 @@ void scanner::readNextChar() {
 
 string scanner::getCCat(int x) {
 	if (x >= 0 && x < NUM_CHAR_CATS) return CH_CAT[x];
-	return ("CH_???" + x);
+	return ("CH_???" + to_string(x));
 } // getCCat()
 
 string scanner::getFState(int x) {
@@ -152,7 +152,7 @@ void scanner::setErrMsg(int & lexLine, int & lexCol, int prevState) {
 			break;
 		case FS_DEC_PT:     errMsg = "Digit expected"; break;
 		case FS_END_COM:
-		case FS_IN_COM:		lexLine; lexCol = prevCol + 1;
+		case FS_IN_COM:		lexLine--; lexCol = prevCol + 1;
 			errMsg = "End of comment expected "; break;
 		default:            errMsg = "FSA Error: state=" + getFState(prevState) + " char='" + nextc + "'";
 		}
