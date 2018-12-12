@@ -1207,7 +1207,6 @@ Stack print: n=5
 215 <STMT_LIST_END>
  11 END
  50 .
-constrain: data type does not match LHS of assignment: P
 
 PARSE: inTok=69 :=
 Stack print: n=4
@@ -1816,7 +1815,6 @@ Stack print: n=5
 215 <STMT_LIST_END>
  11 END
  50 .
-constrain: data type does not match LHS of assignment: S
 
 PARSE: inTok=69 :=
 Stack print: n=4

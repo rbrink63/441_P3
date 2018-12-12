@@ -57,14 +57,19 @@ int constrainer::constrain(token t) {
 			//   If it is not, print the following error and return -1
 			// "constrain: identifier undefined: " << NAME_OF_IDENT << endl;
 			cout << "constrain: identifier undefined: " << getTokenString(t) << endl; 
+			return -1;
 		     }
 		
 		// - If we are doing type checking on an assignment statement
 		//   and the type of this ident is not the same as the 
 		//   constraining type print the following error message:
 		//   "constrain: data type does not match LHS of assignment: " << NAME_OF_IDENT << endl;
-		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
+		    if (constType > 0 && t.tokId != TOK_IDENT){
 			 cout << "constrain: data type does not match LHS of assignment: " << getTokenString(t) << endl;		       	
+			    cout << t.tokId << endl;
+			 cout << constType << endl;
+//			 return -1;
+//
 		    }
 		    
 		 }
@@ -77,8 +82,9 @@ int constrainer::constrain(token t) {
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
-		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
+		    if (constType != TOK_INTEGER){
 			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
+			 return -1;
 		    }
 
 
@@ -90,8 +96,9 @@ int constrainer::constrain(token t) {
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
-		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
-			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
+		    if (constType > 0 && constType != TOK_STRING){
+			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	cout << constType << endl;
+			 return -1;
 		    }
 
 
@@ -103,8 +110,9 @@ int constrainer::constrain(token t) {
 		// and the token t isn't the same type as the
 		// constraint type, print this error message
 		// "constrain: data type does not match LHS of assignment: " << LITERAL_VALUE << endl;
-		    if (constType > 0 && constType != symTbl.getSym(symTbl.getLastAccessed()).datatype){
+		    if (constType > 0 && constType != TOK_REAL){
 			 cout << "constrain: data type does not match LHS of assignment: " << t.sref->data << endl;		       	
+			 return -1;
 		    }
 
 
